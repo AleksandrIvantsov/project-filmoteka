@@ -1,0 +1,111 @@
+.container--top-padding {
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+
+.page-header {
+  // outline: 1px solid blue;
+
+  height: 460px;
+  padding: 14px;
+  background-image: url(../images/header-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    height: 222px;
+    background-image: url(../images/header-background-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 316px;
+    background-image: url(../images/header-background-desktop.jpg);
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+
+  padding: 10px 26px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &--active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &--with-margins {
+    margin-right: 4px;
+    margin-bottom: 8px;
+  }
+}
+
+.search-form {
+  position: relative;
+  width: 252px;
+
+  &__input {
+    width: 252px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 100px;
+
+    &::placeholder {
+      font-weight: 400;
+      color: #000;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    background-image: url(../images/search-button.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.logo {
+  width: 190px;
+  margin-top: 312px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  &__text {
+    font-size: 32px;
+    color: #fff;
+  }
+}

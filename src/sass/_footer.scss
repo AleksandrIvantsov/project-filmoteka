@@ -1,0 +1,36 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100px;
+  background-color: #f7f7f7;
+
+  margin-top: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 5px;
+
+    color: #545454;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  &__image {
+    display: inline;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
